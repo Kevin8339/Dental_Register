@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A1-Dental Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        body {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top left, #371659, #D3425B);
+            font-family: 'Montserrat', sans-serif;
+            color: #444;
+        }
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.bckg {
+  background-color: #383B42;
+  box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #F6F6EF;
+  line-height: 60px;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background-color: #34363A;
+  border-bottom: 1px solid rgba(101, 116, 134, 0.57);
+}
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 3px;
+            color: #fff;
+            font-weight: normal;
+            padding-left: 60px;
+            line-height: 57px;
+            text-shadow: 1px 1px 2px #fff;
+            position: relative;
+            flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+        }
+
+h2:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -20px;
+    top: 9px;
+    background-color: #34363A;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+h3 {
+  font-size: 17px;
+  margin: 0;
+  line-height: 40px;
+  color: #555;
+  cursor: pointer;
+  position: relative;
+}
+
+header {
+  width: 200px;
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: 99;
+  background-color: #34363A;
+}
+
+header nav ul li {
+  border-bottom: 1px solid #42454D;
+  padding-left: 48px;
+  transition: all 0.6s;
+  border-top: 1px solid #2E3036;
+}
+
+header nav ul li:hover {
+  background-color: #454952;
+  transition: all 0.6s;
+  border-bottom: 1px solid #797979;
+}
+
+header nav ul li:hover a {
+  color: #fff;
+  transition: all 0.6s;
+}
+
+header nav ul li a {
+  line-height: 55px;
+  font-size: 18px;
+  position: relative;
+  letter-spacing: 1px;
+  transition: all 0.6s;
+}
+
+header nav ul li a:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left: -32px;
+}
+
+main {
+  flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+}
+
+.title {
+    height: 57px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.title a {
+  color: #AAA;
+  width: auto;
+  margin: 0 20px;
+  float: right;
+  line-height: 62px;
+  position: relative;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.title a:before {
+  content: "\1f464";
+  font-size: 38px;
+  position: absolute;
+  left: -50px;
+  font-family: 'entypo';
+}
+
+a:hover {
+  color: #33526B;
+  transition: all .5s;
+}
+
+.larg {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.larg div {
+  background-color: #F7F7F7;
+  border: 1px solid #E2E2E2;
+  padding: 0 20px;
+  margin: 15px 0;
+}
+
+.larg div:hover {
+  background-color: #fafafa;
+}
+
+.larg div h3 span {
+  font-family: 'entypo';
+  font-size: 19px;
+  position: absolute;
+  right: 0;
+  transition: all .6s;
+}
+
+.larg div h3 span.close {
+  -webkit-transform: rotate(180deg);
+  transition: all .5s;
+}
+
+.larg div p {
+  display: none;
+  margin-left: 10px;
+  padding: 0 15px;
+  border-left: 1px solid #ccc;
+}
+
+    </style>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" data-title="Registro"><i class="fa-solid fa-receipt"></i> Registro</a>
+                    </li>
+                    <li>
+                        <a href="#" data-title="Historial"><i class="fa-solid fa-book"></i> Historial</a>
+                    </li>
+                    <li>
+                        <a href="#" data-title="Usuarios"><i class="fa-solid fa-user-gear"></i> Usuarios</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h2>SECCIÓN INICIAL</h2>
+            </div>
+        </main> 
+    </body>
+</html>
